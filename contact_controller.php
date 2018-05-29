@@ -1,5 +1,8 @@
 <?php
 
+echo "<script type='text/javascript'>alert('Mensaje enviado!');</script>";
+header('Location: index.html');
+
 require 'vendor/autoload.php';
 
 $name = $_POST["name"];
