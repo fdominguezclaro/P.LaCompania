@@ -141,30 +141,33 @@ uso residencial y riego de jardines. Se consideran remarcadores individuales.</p
   <h3 class="text-center">Escríbenos</h3>
   <p class="text-center"><em>Te esperamos!</em></p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <p><span class="glyphicon glyphicon-map-marker"></span>  Santiago, CHL</p>
-      <p><span class="glyphicon glyphicon-phone"></span>  Cel: +569 92680528</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>  Email: fdominguezc@uc.cl</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+  <form action="contact_controller.php" method="post">
+    <div class="row">
+      <div class="col-md-4">
+        <p><span class="glyphicon glyphicon-map-marker"></span>  Santiago, CHL</p>
+        <p><span class="glyphicon glyphicon-phone"></span>  Cel: +569 92680528</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>  Email: fdominguezc@uc.cl</p>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <textarea class="form-control" id="message" name="message" placeholder="Mensaje" rows="5" type="message" required></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-left" type="submit">Enviar</button>
+          </div>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Mensaje" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-left" type="submit">Enviar</button>
-        </div>
-      </div>
     </div>
-  </div>
+  </form>
+
 </div>
 
   <br>
