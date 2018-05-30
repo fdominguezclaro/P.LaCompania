@@ -184,12 +184,12 @@ textarea {
 }
 
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) and (max-width:700px) {
     .navbar {
         display: table;
         width: 100%;
     }
-    .navbar-brand {font-size:90%; },
+    .navbar-brand {font-size:93%; },
     .navbar-search,
     .navbar-toggle { display: table-cell }
     .navbar-search {
