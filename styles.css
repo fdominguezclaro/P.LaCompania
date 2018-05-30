@@ -184,7 +184,7 @@ textarea {
 }
 
 
-@media (min-width:0px) and (max-width:700px) {
+@media (min-width:0px) and (max-width:650px) {
     .navbar {
         display: table;
         width: 100%;
