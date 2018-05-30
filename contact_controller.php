@@ -2,7 +2,10 @@
 
 echo "<script type='text/javascript'>alert('Mensaje enviado!');</script>";
 header('Location: index.html');
+?>
 
+<!--
+php
 require 'vendor/autoload.php';
 
 $name = $_POST["name"];
@@ -32,6 +35,4 @@ $sendgrid->
 echo "<script type='text/javascript'>alert('Mensaje enviado!');</script>";
 header('Location: index.html');
 
-
-
-?>
+-->
