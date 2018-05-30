@@ -187,3 +187,9 @@ textarea {
 @media (max-width:650px) {
     .navbar-brand {font-size:92%;}
     }
+
+@media screen and (max-width: 768px) {
+    body .container-class{
+    width:100% !important;
+    }
+  }
