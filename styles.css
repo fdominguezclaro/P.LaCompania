@@ -185,7 +185,5 @@ textarea {
 
 
 @media (max-width:650px) {
-    .navbar .brand {
-        font-size: : 95%;
-    }
+    .navbar-brand {font-size:92%;}
     }
