@@ -184,30 +184,8 @@ textarea {
 }
 
 
-@media (min-width:0px) and (max-width:650px) {
-    .navbar {
-        display: table;
-        width: 100%;
+@media (max-width:650px) {
+    .navbar .brand {
+        font-size: : 95%;
     }
-    .navbar-brand {font-size:93%; },
-    .navbar-search,
-    .navbar-toggle { display: table-cell }
-    .navbar-search {
-        padding: 7.5px 10px 0 0;
-        width: 1%;
     }
-}
-@media (max-width:400px) {
-    .navbar-search {
-        padding: 7.5px 15px;
-        float: left;
-        clear: both;
-        width: 100%;
-    }
-}
-@media (min-width:768px) {
-    .navbar-search {
-        float: left;
-        margin: 7.5px 0;
-    }
-}
