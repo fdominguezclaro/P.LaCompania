@@ -130,11 +130,12 @@ uso residencial y riego de jardines. Se consideran remarcadores individuales.</p
       </div>
       <div class="column">
         <a href="Images/sites2orig.jpg"><img alt="thumb" src="Images/sites2.jpg" style="width:100%"></a>
-
       </div>
     </div>
-
 </div>
+
+<br/>
+<br/>
 
 
 <!-- Container (Contact Section) -->
@@ -178,7 +179,7 @@ uso residencial y riego de jardines. Se consideran remarcadores individuales.</p
 <script>
 function myMap() {
 var myCenter = new google.maps.LatLng(-32.7014380, -71.4247578);
-var mapProp = {center:myCenter, zoom:16, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.SATELLITE};
+var mapProp = {center:myCenter, zoom:16, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.SATELLITE};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
