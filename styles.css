@@ -189,7 +189,7 @@ textarea {
         display: table;
         width: 100%;
     }
-    .navbar-brand,
+    .navbar-brand {font-size:90%; },
     .navbar-search,
     .navbar-toggle { display: table-cell }
     .navbar-search {
@@ -209,11 +209,5 @@ textarea {
     .navbar-search {
         float: left;
         margin: 7.5px 0;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    nav a {
-         font-size:80%;
     }
 }
