@@ -15,8 +15,9 @@ echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
 
-echo "<script type='text/javascript'>alert('Mensaje enviado!');</script>";
 header('Location: index.html');
+echo "<script type='text/javascript'>alert('Mensaje enviado!');</script>";
+
 ?>
 <!--
 php
