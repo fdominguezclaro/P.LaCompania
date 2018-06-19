@@ -19,7 +19,7 @@ $recipient = "fdominguezc@uc.cl";
 $subject="PLC, from $email";
 $mailheader = "From: $email \r\n";
 
-$sendgrid = new SendGrid('app98066099@heroku.com', 'mm4x15xr2217');
+$sendgrid = new SendGrid(getenv('SENDGRID_USER'), getenv('SENDGRID_PASS'));
 $mail = new SendGrid\Mail();
   $mail->
     addTo($recipient)->
