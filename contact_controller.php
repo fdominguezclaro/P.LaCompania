@@ -1,9 +1,23 @@
 <?php
+require("sendgrid-php/sendgrid-php.php");
+
+$from = new SendGrid\Email(null, "app98066099@heroku.com");
+$subject="PLC, from $email";
+$to = new SendGrid\Email(null, "fdominguezc@uc.cl");
+$content = new SendGrid\Content("text/plain", $_POST["message"]);
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
+
+$apiKey = getenv('SENDGRID_PASS');
+$sg = new \SendGrid($apiKey);
+
+$response = $sg->client->mail()->send()->post($mail);
+echo $response->statusCode();
+echo $response->headers();
+echo $response->body();
 
 echo "<script type='text/javascript'>alert('Mensaje enviado!');</script>";
 header('Location: index.html');
 ?>
-
 <!--
 php
 require 'vendor/autoload.php';
