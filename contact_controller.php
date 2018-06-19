@@ -1,8 +1,8 @@
 <?php
 require("sendgrid-php/sendgrid-php.php");
 
-$from = new SendGrid\Email(null, "app98066099@heroku.com");
-$subject="PLC, from $_POST["email"]";
+$from = new SendGrid\Email(null, getenv('SENDGRID_USER'));
+$subject="PLC, from $_POST['email']";
 $to = new SendGrid\Email(null, "fdominguezc@uc.cl");
 $content = new SendGrid\Content("text/plain", $_POST["message"]);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
