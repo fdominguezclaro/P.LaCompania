@@ -4,6 +4,16 @@ body {
 
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.line
+{
+    border-bottom:1px solid #CCC;
+    padding-bottom:10px;
+}
 h3, h4 {
     margin: 10px 0 30px 0;
     letter-spacing: 10px;
@@ -11,7 +21,7 @@ h3, h4 {
     color: #111;
 }
 .container {
-    padding: 6% 10%;
+    padding: 6% 1%;
     min-height: 100%;
     min-width: : 100%;
 
@@ -168,7 +178,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 90%;
+    width: 100%;
     height: fit-content;
     border: 1px solid #ccc; /* Gray border */
     text-indent: 5%;
@@ -193,3 +203,84 @@ textarea {
     width:100% !important;
     }
   }
+
+table#t01 {
+  width: 100%;
+  background-color: #aed6f1;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 0.5;
+    text-indent: 1%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: black;
+    background-color: #AED6F1;
+    text-align: center
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+table#t01 tr:nth-child(3) {
+    background-color: #CB4739;
+    color: black;
+
+}
+
+table#t01 tr:nth-child(4) {
+    background-color: #CB4739;
+    color: black;
+
+}
+
+table#t01 tr:nth-child(6) {
+    background-color: #CB4739;
+    color: black;
+
+}
+
+table#t01 tr:nth-child(13) {
+    background-color: #CB4739;
+    color: black;
+
+}
+
+table#t01 tr:nth-child(14) {
+    background-color: #CB4739;
+    color: black;
+
+}
+
+table#t01 tr:nth-child(15) {
+    background-color: #CB4739;
+    color: black;
+
+}
+
+.pdfs{
+display: block;
+margin-top: 0px;
+border-style: solid;
+border-width: 3px;
+border-color: #eee;
+
+}
