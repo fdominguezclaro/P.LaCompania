@@ -187,6 +187,12 @@ textarea {
 
 
 }
+@media (min-width:900px) {
+    .vertical-align {
+        display: flex;
+        align-items: center;}
+}
+
 
 #googleMap {
   margin: 30px auto 30px auto;
@@ -198,7 +204,7 @@ textarea {
     .navbar-brand {font-size:92%;}
     }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
     body .container-class{
     width:100% !important;
     }
@@ -233,11 +239,6 @@ table#t01 th {
     color: black;
     background-color: #AED6F1;
     text-align: center
-}
-
-.vertical-align {
-    display: flex;
-    align-items: center;
 }
 
 table#t01 tr:nth-child(3) {
